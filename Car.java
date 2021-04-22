@@ -8,6 +8,14 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Car extends Actor
 {
+    private int speed;
+    /**
+     * Initialize the speed for the Car.
+     */
+    public Car(int setSpeed)
+    {
+        speed = setSpeed;
+    }
     
     /**
      * Act - do whatever the Car wants to do. This method is called whenever
@@ -15,7 +23,7 @@ public class Car extends Actor
      */
     public void act() 
     {
-        move(5);
+        move(speed);
         if(isAtEdge())
         {
             setLocation( 0, getY());
