@@ -83,7 +83,7 @@ public class FrogWorld extends World
     {
         //first row of Trucks, all y = 210, speed of -8
         addObject( new Truck(-8), 770, 210);
-        addObject( new Truck(-8), 450, 210);
+        addObject( new Truck(-8), 75, 210);
 
         //second row of Trucks, all y = 150, speed of -8
         addObject( new Truck(-8), 600, 150);
